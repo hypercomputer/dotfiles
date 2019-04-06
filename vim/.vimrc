@@ -10,6 +10,11 @@ set ignorecase
 set incsearch
 set hlsearch
 set smartcase
+set autoindent
+set backspace=indent,eol,start
+set smarttab
+set autoread
+
 
 "space as leader key"
 let mapleader = "\<Space>"
