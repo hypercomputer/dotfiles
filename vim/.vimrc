@@ -37,3 +37,19 @@ nmap <leader>so :source $MYVIMRC<cr>
 "move up and down by visible lines if current line is wrapped"
 nmap j gj
 nmap k gk
+
+" Plugins "
+call plug#begin()
+
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'ggreer/the_silver_searcher'
+
+call plug#end()
+
+" Make CtrlP use ag for listing the files. Way faster and no useless files.
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_use_caching = 0
