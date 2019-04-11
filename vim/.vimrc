@@ -48,9 +48,13 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'ggreer/the_silver_searcher'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
-" Make CtrlP use ag for listing the files. Way faster and no useless files.
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-let g:ctrlp_use_caching = 0
+" reduce timeout to show gitgutter diff "
+set updatetime=100
+
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
