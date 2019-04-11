@@ -1,0 +1,20 @@
+vim.plug
+DONE: CTRL-p: fuzzyfind for searching for files quickly
+silver searcher
+surround.vim
+repeat.vim
+rails.vim
+rpsec.vim
+
+install ctags, not sure if this is a plugin or not, but it seems to be the best way to get some common IDE like features such as diving into a method defintion that may be in a different file.
+vim.easymotion
+
+Things I wish I had today:
+- autocompletion
+- nerdtree
+- that CTRL+P worked at all?!
+- running test from file
+- diving into method defintions (ctags will probably fix this)
+- have vim automatically reload files changed on disc (this was not happening after some git checkouts I did)
+- wanting to hop between method def-end, get the 'matchit' plugin
+- I seriously need to improve the pane hopping in my tmux config because I am being very inneficient
