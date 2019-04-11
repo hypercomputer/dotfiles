@@ -52,6 +52,12 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
+" set keyboard shortcuts for fzf "
+nnoremap <leader>t :GFiles<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>g :GFiles?<CR>
+nmap <leader><tab> <plug>(fzf-maps-n)
+
 " reduce timeout to show gitgutter diff "
 set updatetime=100
 
