@@ -9,6 +9,8 @@ set scrolloff=4
 set ignorecase
 set incsearch
 set hlsearch
+hi Search guibg=peru guifg=wheat
+hi Search cterm=NONE ctermfg=LightGrey ctermbg=DarkBlue
 set smartcase
 set autoindent
 set backspace=indent,eol,start
@@ -49,6 +51,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'ggreer/the_silver_searcher'
 Plug 'airblade/vim-gitgutter'
+Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
 
